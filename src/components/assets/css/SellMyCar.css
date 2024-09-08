@@ -1,0 +1,135 @@
+.contentSellMyCar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    overflow-x: hidden;
+}
+
+.boxSellMyCar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    z-index: 2;
+}
+
+.boxSellMyCar h1 {
+    padding: 40px 0 30px 0;
+}
+
+.boxSellMyCar div {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSellMyCar {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    max-width: 80vw;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.labelInputSellMyCar {
+    position: relative;
+    top: -55px;
+    color: gray;
+    margin-bottom: -7px;
+    padding-right: 5px;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tel_emailSellMyCar {
+    flex-direction: row !important;
+    gap: 150px;
+    /* background-color: #006400; */
+}
+
+.inputFileSellMyCar {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inputSubmitSellMyCar {
+    position: relative;
+    top: -15px;
+    padding: 20px 30px;
+    background-color: #5fdc63b6;
+    border: none;
+}
+
+.fundoFormulario {
+    position: absolute;
+    right: 0px;
+    width: 450px;
+    bottom: 60px;
+}
+
+/* ------------------------------ */
+
+.inputSellMyCar:focus~.labelInputSellMyCar {
+    top: -60px;
+    color: #009505;
+    transition: .2s;
+}
+
+.inputSellMyCar:focus {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid forestgreen;
+    background-color: transparent;
+    outline: none;
+}
+
+.inputSubmitSellMyCar:hover {
+    background-color: #006400;
+    color: white;
+    transition: 0.2s;
+}
+
+/* -------------------------------------------------------- */
+
+.boxSellMyCar2 {
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+    height: 100vh;
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: 0;
+    border-radius: 10px;
+}
+
+.fundoContato {
+    position: absolute;
+    top: 1050px;
+    width: 400px;
+}
+
+.boxSellMyCar2 div {
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    min-width: 300px;
+    gap: 20px;
+}
+
+.boxSellMyCar2 div img {
+    width: 30px;
+}
