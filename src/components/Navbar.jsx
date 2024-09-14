@@ -19,9 +19,9 @@ const Navbar = () => {
                     className="logo" src={logo} alt="logo" /></Link>
                 <ul className='optionsNav_ul'>
                     <li className='optionsNav_li'><Link to='/'>Home</Link></li>
-                    <li className='optionsNav_li'><Link to='/vender-meu-carro'>Quero vender meu carro</Link></li>
-                    <li className='optionsNav_li'><Link to='/estoque'>Nosso estoque</Link></li>
-                    <li className='optionsNav_li'><Link to='/sobre'>Sobre nós</Link></li>
+                    <li className='optionsNav_li'><Link to='/sellMyCar'>Quero vender meu carro</Link></li>
+                    <li className='optionsNav_li'><Link to='/supply'>Nosso estoque</Link></li>
+                    <li className='optionsNav_li'><Link to='/about'>Sobre nós</Link></li>
                 </ul>
             </nav>
         </div>
