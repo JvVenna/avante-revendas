@@ -108,6 +108,10 @@
     margin-bottom: 10px;
 }
 
+.boxSellMyCar2 h3{
+    font-weight: 500;
+}
+
 iframe {
     border: 0;
     border-radius: 10px;
@@ -132,4 +136,72 @@ iframe {
 
 .boxSellMyCar2 div img {
     width: 30px;
+}
+
+
+@media (max-width:1100px) {
+
+    .fundoFormulario,
+    .fundoContato {
+        display: none;
+    }
+
+    .boxSellMyCar div {
+        width: 80%;
+    }
+
+    .tel_emailSellMyCar {
+        gap: 10%;
+    }
+}
+
+@media (max-width:900px) {
+
+    .tel_emailSellMyCar {
+        gap: 2%;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .tel_emailSellMyCar {
+        flex-direction: column !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .inputSubmitSellMyCar {
+        margin-top: 5vh;
+    }
+
+    .boxSellMyCar h1 {
+        text-align: center;
+    }
+
+    /*-----------BOX2-----------*/
+    .boxSellMyCar2 h2,
+    h3 {
+        text-align: center;
+    }
+
+    .boxSellMyCar2 iframe {
+        width: 90%;
+    }
+
+    @media (max-width:425px) {
+
+        .boxSellMyCar h1 {
+            font-size: 4vh;
+        }
+
+        /*-----------BOX2-----------*/
+        .boxSellMyCar2 h2 {
+            font-size: 3vh;
+        }
+
+        .boxSellMyCar2 h3 {
+            font-size: 2vh;
+        }
+    }
 }
