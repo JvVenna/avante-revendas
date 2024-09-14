@@ -104,12 +104,11 @@
     align-items: center;
     gap: 20px;
     z-index: 2;
-    background-color: #006400;
     height: 100vh;
     margin-bottom: 10px;
 }
 
-.boxSellMyCar2 h3{
+.boxSellMyCar2 h3 {
     font-weight: 500;
 }
 
