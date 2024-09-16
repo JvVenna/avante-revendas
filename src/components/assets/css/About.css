@@ -1,16 +1,20 @@
+.principalSobre {
+    overflow-x: hidden;
+}
+
 .alignImg {
     display: flex;
     justify-content: center;
 }
 
 .imgBackgroundInit_about {
-    margin: 50px 0;
-    width: 1350px;
+    margin: 10vh 0 0 0;
+    width: 95%;
     border-radius: 4px;
 }
 
 .title {
-    margin: 0 250px 100px 250px;
+    margin: 8vh 10vw 15vh 10vw;
     text-align: center;
 }
 
@@ -27,6 +31,7 @@
 
 .firstBox h1 {
     padding-top: 30px;
+    text-align: center;
 }
 
 .boxAbout {
@@ -50,10 +55,11 @@
     gap: 50px;
 }
 
-.infoAbout, .infoAbout2 {
+.infoAbout,
+.infoAbout2 {
     font-size: 18px;
     display: flex;
-    flex-direction: ;
+    /* flex-direction: ; */
     align-items: center;
     gap: 10px;
     max-width: 500px;
@@ -61,7 +67,8 @@
     flex-direction: row;
 }
 
-.infoAbout img, .infoAbout2 img {
+.infoAbout img,
+.infoAbout2 img {
     width: 50px;
 }
 
@@ -98,9 +105,9 @@ section.box2_about div {
     font-size: 19px;
     display: flex;
     align-items: center;
-    min-width: 150px;
-    gap: 500px;
+    width: 85vw;
     border-bottom: 1px black solid;
+    justify-content: space-between;
 }
 
 .contentInfo {
@@ -110,10 +117,8 @@ section.box2_about div {
     gap: 30px;
 }
 
-.contentInfo div {
-    width: 60%;
-    justify-content: space-between;
-}
+/* .contentInfo div {
+} */
 
 .down_about {
     display: flex;
@@ -154,7 +159,7 @@ section.box2_about div {
     background-color: #f0f0f089;
     display: flex;
     align-items: center;
-    padding: 20px 0 20px 40px;
+    padding: 20px 0 20px 2vw;
     gap: 20px;
     min-width: 520px;
     border-radius: 10px;
@@ -170,4 +175,88 @@ section.box2_about div {
     top: -65px;
     right: -200px;
     /* z-index: -4; */
+}
+
+
+/*============================MEDIA-QUERYS============================*/
+
+@media (max-width:1100px) {
+
+    .mulherAfirmativo_about,
+    .homemAfirmativo_about {
+        display: none;
+    }
+
+    .boxAbout {
+        min-height: auto;
+        padding: 10vh 10vh;
+        justify-content: center;
+    }
+
+    .contentInfo_about {
+        gap: 10vh;
+    }
+
+    .box2_about {
+        padding-bottom: 10vh;
+    }
+
+    .box3_about {
+        flex-direction: column;
+    }
+
+    .box3_about h1 {
+        text-align: center;
+    }
+
+    .infoAboutContact {
+        align-items: center;
+    }
+
+    .infoAboutContact div {
+        width: 85vw;
+        background-color: #9696968a;
+    }
+
+    .infoAboutContact div p {
+        font-weight: 500;
+        color: black;
+    }
+
+    .imgBackgroundEnd_about {
+        position: sticky;
+    }
+
+}
+
+@media (max-width:425px) {
+    .imgBackgroundEnd_about {
+        display: none;
+    }
+
+    .box3_about h1,
+    .infoAboutContact {
+        background-color: white;
+    }
+
+    .infoAboutContact div {
+        min-width: initial;
+        overflow-wrap: anywhere;
+    }
+
+    .title_social_media {
+        display: none;
+    }
+
+    div.box_social_media {
+        padding-left: 0;
+        justify-content: center;
+
+    }
+    .infoAboutContact div{
+        background-color: #c2c2c28a;
+    }
+    .principalSobre {
+        overflow-x: visible;
+    }
 }

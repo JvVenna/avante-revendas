@@ -19,15 +19,17 @@ import ig from '../assets/img/icones-midia-social/ig.png'
 import fb from '../assets/img/icones-midia-social/fb.png'
 
 import background_end from '../assets/img/about/contatoSobre.png'
+import background_end_2 from '../assets/img/about/contatoSobre-2.png'
 
 function About() {
   return (
     <main className='principalSobre'>
       <div className='firstBox'>
         <h1>AvanteRevendas - Revendedora autorizada</h1>
-        <div className="alignImg">
-          <img className='imgBackgroundInit_about' src={background_init} alt="imagem fundo inicio" />
-        </div>
+        <picture className="alignImg">
+          <source media="(max-width:650px)" srcset="https://www.cauterfix.com.br/wp-content/uploads/2019/02/carros_confianca-1080x565.jpg"/>
+          <img className='imgBackgroundInit_about' src={background_init}/>
+        </picture>
         <h1 className='title'>Nós somos a <label><i>Avante</i>Revendas</label>, a empresa perfeita para você que quer ganhar uma grana com seu carro</h1>
       </div>
       <div className="boxAbout">
@@ -79,25 +81,26 @@ function About() {
         <div className='infoAboutContact'>
           <div>
             <img src={telefone} alt="imagem e-mail" />
-            <p><b>E-mail:</b>minhaempresa@avanterevendas.com</p>
+            <p><b>E-mail: </b>minhaempresa@avanterevendas.com</p>
           </div>
           <div>
             <img src={email} alt="imagem e-mail" />
             <p><b>Telefone:</b>(19) 9999-4321</p>
           </div>
-          <div>
-            <p>Ou ainda pelas nossas redes sociais:</p>
+          <div className='box_social_media'>
+            <p className='title_social_media'>Ou ainda pelas nossas redes sociais:</p>
             <a href="#"><img className='redesSociais_img' src={wpp} alt="imagem whatsapp" /></a>
-            <a href="#">
-              <img className='redesSociais_img' src={ig} alt="imagem instagram" />
-            </a>
-            <a href="#">
-              <img className='redesSociais_img' src={fb} alt="imagem facebook" />
-            </a>
+            <a href="#"><img className='redesSociais_img' src={ig} alt="imagem instagram" /></a>
+            <a href="#"><img className='redesSociais_img' src={fb} alt="imagem facebook" /></a>
           </div>
         </div>
       </div>
+
+      <picture className="alignImg">
+          <source media="(max-width:900px)" srcset={background_end_2}/>
       <img className='imgBackgroundEnd_about' src={background_end} alt="fundo sobre box 3" />
+        </picture>
+
     </main>
   )
 }
