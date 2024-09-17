@@ -11,14 +11,14 @@ import fb from './assets/img/icones-midia-social/fb.png'
 import ig from './assets/img/icones-midia-social/ig.png'
 import ttk from './assets/img/icones-midia-social/ttk.png'
 import yt from './assets/img/icones-midia-social/yt.png'
-
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom"
 
 const Footer = () => {
 
 
     function changeImageWpp() {
-        document.querySelector('.wpp').src = "./src/components/assets/img/icones-midia-social/whatsapp.png"
+        document.querySelector('.wpp').src = "  ./src/components/assets/img/icones-midia-social/whatsapp.png"
     }
     function changeImageReturnWpp() {
         document.querySelector('.wpp').src = "./src/components/assets/img/icones-midia-social/wpp.png"

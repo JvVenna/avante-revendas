@@ -1,0 +1,17 @@
+.wpp,
+.it,
+.fb {
+    font-size: 3.5vh;
+}
+
+.wpp:hover {
+    color: rgb(37, 211, 102);
+}
+
+.it {
+    color: rgb(114, 128, 93);
+}
+
+.fb {
+    color: greenyellow;
+}

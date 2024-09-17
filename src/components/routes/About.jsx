@@ -1,4 +1,5 @@
 import '../assets/css/About.css'
+import styles from '../assets/css/icons.module.css'
 
 import background_init from '../assets/img/about/imagemSobre.jpg'
 
@@ -17,9 +18,15 @@ import telefone from '../assets/img/icones-midia-social/telefone.png'
 import wpp from '../assets/img/icones-midia-social/wpp.png'
 import ig from '../assets/img/icones-midia-social/ig.png'
 import fb from '../assets/img/icones-midia-social/fb.png'
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi";
+import { LuPhone } from "react-icons/lu";
 
 import background_end from '../assets/img/about/contatoSobre.png'
 import background_end_2 from '../assets/img/about/contatoSobre-2.png'
+
 
 function About() {
   return (
@@ -80,18 +87,18 @@ function About() {
         <h1>Escolha a melhor forma de <br /> <label className='labelAbout3'>falar com a gente</label></h1>
         <div className='infoAboutContact'>
           <div>
-            <img src={telefone} alt="imagem e-mail" />
+            <LuPhone/>
             <p><b>E-mail: </b>minhaempresa@avanterevendas.com</p>
           </div>
           <div>
-            <img src={email} alt="imagem e-mail" />
+            <TfiEmail />
             <p><b>Telefone:</b>(19) 9999-4321</p>
           </div>
           <div className='box_social_media'>
             <p className='title_social_media'>Ou ainda pelas nossas redes sociais:</p>
-            <a href="#"><img className='redesSociais_img' src={wpp} alt="imagem whatsapp" /></a>
-            <a href="#"><img className='redesSociais_img' src={ig} alt="imagem instagram" /></a>
-            <a href="#"><img className='redesSociais_img' src={fb} alt="imagem facebook" /></a>
+            <a href="#"><BsWhatsapp className={`${styles.wpp}`}/></a>
+            <a href="#"><BsInstagram className={`${styles.it}`}/></a>
+            <a href="#"><BsFacebook className={`${styles.fb}`}/></a>
           </div>
         </div>
       </div>
@@ -101,6 +108,7 @@ function About() {
       <img className='imgBackgroundEnd_about' src={background_end} alt="fundo sobre box 3" />
         </picture>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </main>
   )
 }
