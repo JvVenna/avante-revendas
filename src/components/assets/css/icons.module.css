@@ -1,10 +1,9 @@
-.email {
+.email:hover {
     color: red;
 }
 
 .phone:hover{
     color: green;
-    font-size: 30vh;
 }
 
 .wpp,
