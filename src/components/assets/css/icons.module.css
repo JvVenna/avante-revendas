@@ -1,17 +1,54 @@
+.email {
+    color: red;
+}
+
+.phone:hover{
+    color: green;
+    font-size: 30vh;
+}
+
 .wpp,
 .it,
 .fb {
-    font-size: 3.5vh;
+    font-size: 3vh;
+    border-radius: 5px;
+}
+
+/* =================================================== */
+
+.wpp:hover,
+.it:hover,
+.fb:hover {
+    animation: increase_icon linear infinite 1s;
+    animation-delay: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .wpp:hover {
     color: rgb(37, 211, 102);
 }
 
-.it {
-    color: rgb(114, 128, 93);
+.it:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.fb {
-    color: greenyellow;
+.fb:hover {
+    color: #3b5998;
+}
+
+/* =================================================== */
+
+@keyframes increase_icon {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    100% {
+        scale: 1;
+    }
 }

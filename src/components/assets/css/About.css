@@ -151,6 +151,10 @@ section.box2_about div {
     z-index: 3;
 }
 
+.infoAboutContact:hover ~.jorge{
+font-size: 30vh;
+}
+
 .infoAboutContact div img {
     width: 30px;
 }
