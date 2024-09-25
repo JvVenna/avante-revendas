@@ -10,7 +10,7 @@ import info from "../assets/img/about/experienciaSobre.png";
 import info2 from "../assets/img/about/profissionalSobre.png";
 import info3 from "../assets/img/about/avaliacaoSobre.png";
 
-import down from "../assets/img/about/down.png";
+import { FaCaretDown } from "react-icons/fa";
 
 import { IoLogoFacebook } from "react-icons/io5";
 import { PiInstagramLogoThin } from "react-icons/pi";
@@ -69,29 +69,56 @@ function About() {
           alt="imagem homem afirmativo"
         />
       </div>
-
       <section className="box2_about">
         <h1>Dúvidas frequentes</h1>
         <section className="contentInfo">
           <div>
-            <p>duvidas frequentes</p>
-            <img className="down_about" src={down} alt="abaixar" />
+            <section>
+              <p>duvidas frequentes</p>
+              <FaCaretDown className={`${styles.down}`} />
+            </section>
+            <article className="article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              rhoncus vulputate metus, et vehicula neque semper tristique. Cras
+              dictum quis lorem a rhoncus. Nulla turpis lectus, tristique vel
+              ipsum quis, interdum auctor orci. Ut laoreet dapibus rutrum.
+            </article>
           </div>
           <div>
-            <p>duvidas frequentes</p>
-            <img className="down_about" src={down} alt="abaixar" />
+            <section>
+              <p>duvidas frequentes</p>
+              <FaCaretDown className={`${styles.down}`} />
+            </section>
+            <article className="article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              rhoncus vulputate metus, et vehicula neque semper tristique. Cras
+              dictum quis lorem a rhoncus. Nulla turpis lectus, tristique vel
+              ipsum quis, interdum auctor orci. Ut laoreet dapibus rutrum.
+            </article>
           </div>
           <div>
-            <p>duvidas frequentes</p>
-            <img className="down_about" src={down} alt="abaixar" />
+            <section>
+              <p>duvidas frequentes</p>
+              <FaCaretDown className={`${styles.down}`} />
+            </section>
+            <article className="article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              rhoncus vulputate metus, et vehicula neque semper tristique. Cras
+              dictum quis lorem a rhoncus. Nulla turpis lectus, tristique vel
+              ipsum quis, interdum auctor orci. Ut laoreet dapibus rutrum.
+            </article>
           </div>
           <div>
-            <p>duvidas frequentes</p>
-            <img className="down_about" src={down} alt="abaixar" />
-          </div>
-          <div>
-            <p>duvidas frequentes</p>
-            <img className="down_about" src={down} alt="abaixar" />
+            <section>
+              <p>duvidas frequentes</p>
+              <FaCaretDown className={`${styles.down}`} />
+            </section>
+            <article className="article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              rhoncus vulputate metus, et vehicula neque semper tristique. Cras
+              dictum quis lorem a rhoncus. Nulla turpis lectus, tristique vel
+              ipsum quis, interdum auctor orci. Ut laoreet dapibus rutrum.
+            </article>
           </div>
         </section>
       </section>
@@ -101,22 +128,24 @@ function About() {
           <label className="labelAbout3">falar com a gente</label>
         </h1>
         <div className="infoAboutContact">
-          <div className="jorge">
-            <MdEmail className={`${styles.email}`} />
-            <p>
-              <b>E-mail: </b>minhaempresa@avanterevendas.com
-            </p>
+          <div>
+            <a href="mailto:robcleisonvendedor@avanterevendas.com">
+              <p>
+                <b>E-mail: </b>robcleisonvendedor@avanterevendas.com
+              </p>
+              <MdEmail className={`${styles.email}`} />
+            </a>
           </div>
-          <div className={`${styles.content_phone}`}>
-            <FaPhoneAlt className={`${styles.phone}`} />
-            <p>
-              <b>Telefone:</b>(19) 9999-4321
-            </p>
+
+          <div>
+            <a href="callto:(01) 0000-0000">
+              <p>
+                <b>Telefone:</b>(01) 0000-0000
+              </p>
+              <FaPhoneAlt className={`${styles.phone}`} />
+            </a>
           </div>
           <div className="box_social_media">
-            <p className="title_social_media">
-              Ou ainda pelas nossas redes sociais:
-            </p>
             <a href="#">
               <IoLogoWhatsapp className={`${styles.wpp}`} />
             </a>
@@ -126,10 +155,12 @@ function About() {
             <a href="#">
               <IoLogoFacebook className={`${styles.fb}`} />
             </a>
+            <p className="title_social_media">
+              Ou ainda pelas nossas redes sociais:
+            </p>
           </div>
         </div>
       </div>
-
       <picture className="alignImg">
         <source media="(max-width:900px)" srcset={background_end_2} />
         <img
@@ -138,8 +169,6 @@ function About() {
           alt="fundo sobre box 3"
         />
       </picture>
-
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </main>
   );
 }

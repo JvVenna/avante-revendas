@@ -106,7 +106,6 @@ section.box2_about div {
     display: flex;
     align-items: center;
     width: 85vw;
-    border-bottom: 1px black solid;
     justify-content: space-between;
 }
 
@@ -117,15 +116,41 @@ section.box2_about div {
     gap: 30px;
 }
 
-/* .contentInfo div {
-} */
-
-.down_about {
+.contentInfo div {
     display: flex;
-    width: 20px;
+    flex-direction: column;
 }
 
-/* ------------------------------------------------------------------------------- */
+.contentInfo div section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    width: 100%;
+}
+
+.contentInfo div section p {
+    width: 100%;
+}
+
+.article {
+    display: none;
+    visibility: hidden;
+    color: black;
+font-size: 2.4vh;
+}
+
+section:hover~article {
+    display: flex;
+    visibility: visible;
+}
+
+article:hover {
+    display: flex;
+    visibility: visible;
+}
+
+/* ---------------------------------NOS CONTATE---------------------------------------------- */
 
 .box3_about {
     background-color: white;
@@ -151,26 +176,34 @@ section.box2_about div {
     z-index: 3;
 }
 
-.infoAboutContact:hover ~.jorge{
-font-size: 30vh;
-}
-
-.infoAboutContact div img {
-    width: 30px;
-}
-
 .infoAboutContact div {
     background-color: #f0f0f089;
     display: flex;
     align-items: center;
-    padding: 20px 0 20px 2vw;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 3vh;
     gap: 20px;
-    min-width: 520px;
+    width: 520px;
     border-radius: 10px;
 }
 
+a[href="mailto"],
+a[href*="callto"]{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
 .infoAboutContact div p {
-    color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0 20px 2vw;
+    width: 100%;
+}
+
+.title_social_media {
+    width: fit-content !important;
 }
 
 .imgBackgroundEnd_about {
@@ -219,7 +252,6 @@ font-size: 30vh;
 
     .infoAboutContact div {
         width: 85vw;
-        background-color: #9696968a;
     }
 
     .infoAboutContact div p {
@@ -257,9 +289,11 @@ font-size: 30vh;
         justify-content: center;
 
     }
-    .infoAboutContact div{
+
+    .infoAboutContact div {
         background-color: #c2c2c28a;
     }
+
     .principalSobre {
         overflow-x: visible;
     }

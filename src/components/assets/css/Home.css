@@ -1,5 +1,4 @@
 div.content {
-    /* min-width: 100%; */
     min-height: 93vh;
     background-color: #5FDC64;
 }
@@ -17,6 +16,7 @@ div.content {
     right: 100px;
     width: 1000px;
     position: absolute;
+    z-index: -1;
 }
 
 .decoracaoLateral {
@@ -25,6 +25,7 @@ div.content {
     transform: rotate(180deg);
     position: absolute;
     width: 250px;
+    z-index: -1;
 }
 
 .decoracaoLateralEsq {
@@ -575,11 +576,6 @@ input.inputUserNumber {
     .box4 h1 {
         font-size: 5vh;
         text-align: center;
-    }
-
-    .box4 div div {
-        /* background-color: #006400; */
-
     }
 
     .box4 img {

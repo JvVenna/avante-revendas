@@ -150,11 +150,11 @@ const Home = () => {
             <a className='maps' target='_blank' href="https://goo.gl/maps/co2dSygtnvEkSSG69">
               <p>Avenida Bacaninha de São João do Mistério, 999 - Jardim Jorginho Costela, Campinas/SP</p>
             </a>
-            <a href="tel:+(19) 9999-4321">
-              <p className='telefone'>(19) 9999-4321</p>
+            <a href="tel:+(01) 0000-0000">
+              <p className='telefone'>(01) 0000-0000</p>
             </a>
-            <a href="mailto:minhaempresa@avanterevendas.com">
-              <p className='email'>minhaempresa@avanterevendas.com</p>
+            <a href="mailto:robcleisonvendedor@avanterevendas.com">
+              <p className='email'>robcleisonvendedor@avanterevendas.comm</p>
             </a>
             <div className="redesSociais_home">
               <a href="#">

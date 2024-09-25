@@ -1,14 +1,36 @@
-.email:hover {
-    color: red;
+.down:hover,
+p:hover~.down {
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
 }
 
-.phone:hover{
+.down {
+    color: black;
+}
+
+/* --------------------------noscontate */
+
+p:hover~.email,
+.email:hover {
+    color: red;
+    animation: increase_icon linear infinite 1s;
+    animation-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+
+p:hover~.phone,
+.phone:hover {
     color: green;
+    animation: increase_icon linear infinite 1s;
+    animation-delay: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .wpp,
 .it,
-.fb {
+.fb,
+.email,
+.phone {
     font-size: 3vh;
     border-radius: 5px;
 }
@@ -49,5 +71,19 @@
 
     100% {
         scale: 1;
+    }
+}
+
+
+/*============================MEDIA-QUERYS============================*/
+
+@media (max-width:1100px) {
+
+    .wpp,
+    .it,
+    .fb,
+    .email,
+    .phone {
+        font-size: 4vh;
     }
 }
