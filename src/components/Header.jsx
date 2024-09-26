@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./assets/css/Header.css";
+import logo from "./assets/img/cabecalho-rodape/navbar/logo.png"
+
 
 const Header = () => {
   const [classOn, setClassOn] = useState(false);
+
 
   return (
     <header>
       <div className="container">
         <img
           className="logo-cyan"
-          src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4"
+          src={logo}
           alt="logo Cyan"
         />
 
