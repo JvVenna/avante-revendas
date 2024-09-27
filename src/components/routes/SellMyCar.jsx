@@ -1,12 +1,18 @@
 import '../assets/css/SellMyCar.css'
 import fundoFormulario from '../assets/img/sell-my-car/homem-prancheta.png'
 import fundoContato from '../assets/img/sell-my-car/homem-carro.jpg'
-import fb from '../assets/img/icones-midia-social/fb.png'
-import ig from '../assets/img/icones-midia-social/ig.png'
-import wpp from '../assets/img/icones-midia-social/wpp.png'
-import email from '../assets/img/icones-midia-social/email.png'
+import { PiFacebookLogoFill } from "react-icons/pi";
+import { PiWhatsappLogoFill } from "react-icons/pi";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { MdEmail } from "react-icons/md";
 
 const SellMyCar = () => {
+
+const phone = "(19) 0101-0110"
+const linkPhone = "tel:+55(19) 0101-0110"
+const email = "robcleisonvendedor@avanterevendas.com"
+const linkEmail = "mailto:robcleisonvendedor@avanterevendas.com?subject=Quero%20Vender%20Meu%20Carro&body=Ol%C3%A1%2C%20Robcleison!%0A%0AGostaria%20de%20saber%20mais%20sobre%20condi%C3%A7%C3%B5es%20se%20eu%20vender%20meu%20carro%20com%20voc%C3%AAs%3F%0A%0AFico%20no%20aguardo"
+
   return (
     <>
       <main className='contentSellMyCar'>
@@ -54,16 +60,16 @@ const SellMyCar = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14701.125032568709!2d-47.06814409309355!3d-22.902994608726495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf45e8426371%3A0x9f82c5328a3a2897!2sPrado%20Ve%C3%ADculos!5e0!3m2!1spt-BR!2sbr!4v1693398520908!5m2!1spt-BR!2sbr" width="800" height="250" loading="lazy"></iframe>
           <br />
           <div>
-            <a href="mailto:minhaempresa@avanterevendas.com"><p>minhaempresa@avanterevendas.com</p></a>
+            <a href ={linkEmail}><p>{email}</p></a>
           </div>
           <div>
-            <a href="tel:+(19) 9999-4321"><p>(19) 9999-4321</p></a>
+            <a href={linkPhone}><p>{phone}</p></a>
           </div>
           <div>
-            <a href="#"><img src={wpp} alt="imagem whatsapp" /></a>
-            <a href="#"><img src={email} alt="imagem e-mail" /></a>
-            <a href="#"><img src={ig} alt="imagem instagram" /></a>
-            <a href="#"><img src={fb} alt="imagem facebook" /></a>
+            <a href="#"><PiWhatsappLogoFill className='IconSocial'/></a>
+            <a href="#"><PiInstagramLogoFill className='IconSocial'/></a>
+            <a href="#"><MdEmail className='IconSocial'/></a>
+            <a href="#"><PiFacebookLogoFill className='IconSocial'/></a>
           </div>
         </section>
           <img className='fundoContato' src={fundoContato} alt="imagem fundo" />

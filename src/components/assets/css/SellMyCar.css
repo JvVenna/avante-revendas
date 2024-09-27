@@ -138,6 +138,15 @@ iframe {
     width: 30px;
 }
 
+.IconSocial{
+    color: #3c3c3c;
+    font-size: 1.8rem;
+}
+.IconSocial:hover{
+    scale: 1.2;
+    transition-duration: 300ms;
+    opacity: 0.8;
+}
 
 @media (max-width:1100px) {
 

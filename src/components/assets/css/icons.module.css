@@ -31,8 +31,9 @@ p:hover~.phone,
 .fb,
 .email,
 .phone {
-    font-size: 3vh;
+    font-size: 1.6rem;
     border-radius: 5px;
+    color: rgb(45, 45, 45);
 }
 
 /* =================================================== */

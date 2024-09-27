@@ -188,7 +188,7 @@ article:hover {
     border-radius: 10px;
 }
 
-a[href="mailto"],
+.emailAbout,
 a[href*="callto"]{
     
     display: flex;

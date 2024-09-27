@@ -77,6 +77,12 @@ const Home = () => {
     document.querySelector('.carroHome').src = "./src/components/assets/img/home/box3/carroHome-box3.png"
   }
 
+const phone = "(19) 0101-0110"
+const linkPhone = "tel:+55(19) 0101-0110"
+const email = "robcleisonvendedor@avanterevendas.com"
+const linkEmail = "mailto:robcleisonvendedor@avanterevendas.com?subject=Tenho%20Interesse&body=Gostaria%20de%20saber%20mais%20sobre%20as%20vantagens%20de%20comprar%20e%2Fou%20vender%20com%20voc%C3%AAs"
+
+
   return (
 
     <body>
@@ -150,11 +156,11 @@ const Home = () => {
             <a className='maps' target='_blank' href="https://goo.gl/maps/co2dSygtnvEkSSG69">
               <p>Avenida Bacaninha de São João do Mistério, 999 - Jardim Jorginho Costela, Campinas/SP</p>
             </a>
-            <a href="tel:+(01) 0000-0000">
-              <p className='telefone'>(01) 0000-0000</p>
+            <a href={linkPhone}>
+              <p className='telefone'>{phone}</p>
             </a>
-            <a href="mailto:robcleisonvendedor@avanterevendas.com">
-              <p className='email'>robcleisonvendedor@avanterevendas.comm</p>
+            <a href={linkEmail}>
+              <p className='email'>{email}</p>
             </a>
             <div className="redesSociais_home">
               <a href="#">

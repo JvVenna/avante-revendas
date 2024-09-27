@@ -22,6 +22,10 @@ import background_end from "../assets/img/about/contatoSobre.png";
 import background_end_2 from "../assets/img/about/contatoSobre-2.png";
 
 function About() {
+
+const phone = "(19) 0101-0110"
+const email = "robcleisonvendedor@avanterevendas.com"
+
   return (
     <main className="principalSobre">
       <div className="firstBox">
@@ -129,18 +133,18 @@ function About() {
         </h1>
         <div className="infoAboutContact">
           <div>
-            <a href="mailto:robcleisonvendedor@avanterevendas.com">
+            <a className="emailAbout" href="mailto:robcleisonvendedor@avanterevendas.com">
               <p>
-                <b>E-mail: </b>robcleisonvendedor@avanterevendas.com
+                <b>E-mail: </b>{email}
               </p>
               <MdEmail className={`${styles.email}`} />
             </a>
           </div>
 
           <div>
-            <a href="callto:(01) 0000-0000">
+            <a href='callto:(19) 0101-0110'>
               <p>
-                <b>Telefone:</b>(01) 0000-0000
+                <b>Telefone:</b>{phone}
               </p>
               <FaPhoneAlt className={`${styles.phone}`} />
             </a>
