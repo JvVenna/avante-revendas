@@ -137,7 +137,7 @@ section.box2_about div {
     display: none;
     visibility: hidden;
     color: black;
-font-size: 2.4vh;
+    font-size: 2.4vh;
 }
 
 section:hover~article {
@@ -189,8 +189,8 @@ article:hover {
 }
 
 .emailAbout,
-a[href*="callto"]{
-    
+a[href*="callto"] {
+    text-decoration: none;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -266,6 +266,11 @@ a[href*="callto"]{
 }
 
 @media (max-width:425px) {
+    
+    .boxAbout{
+        padding: 100px 10px 100px 10px;
+    }
+    
     .imgBackgroundEnd_about {
         display: none;
     }
@@ -287,6 +292,8 @@ a[href*="callto"]{
     div.box_social_media {
         padding-left: 0;
         justify-content: center;
+        height: 4rem;
+        margin-bottom: 4rem;
 
     }
 

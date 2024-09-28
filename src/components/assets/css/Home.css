@@ -127,7 +127,7 @@ div.content {
     flex-wrap: nowrap;
     align-items: center;
     gap: 50px;
-    /* background-color: #006400; */
+    justify-content: center;
 }
 
 .inputUser {
@@ -423,25 +423,26 @@ input.inputUserNumber {
     }
 
     .content_text {
-        /* background-color: white; */
         position: sticky;
         top: 0;
         left: 0;
         width: 100vw;
         align-items: center;
-        margin-top: 10vh;
-        /* justify-content: center; */
+        margin-top: 5%;
     }
 
     .content_text_div {
         justify-content: center;
         padding: 0 50px 0 50px;
         position: sticky;
-        /* background-color: blue; */
     }
 
     .content_text H1 {
         text-align: center;
+    }
+
+    .contentInfoInicio{
+        padding-bottom: 4rem;
     }
 
     /*-----------form-----------*/
@@ -481,9 +482,11 @@ input.inputUserNumber {
     br {
         display: none;
     }
-    .box3{
+
+    .box3 {
         height: fit-content;
     }
+
     .title-box-3 {
         padding: 10px;
     }
@@ -492,14 +495,14 @@ input.inputUserNumber {
         display: flex;
         gap: 10px;
         justify-content: center;
-        padding: 0 0 50px 0;
+        padding: 0 10px 50px 10px;
     }
 }
 
 @media (max-width:600px) {
     .content h1 {
         font-size: 7vh;
-        padding: 0;
+        padding: 0 10px 0 10px;
     }
 
     .contentInfoInicio {
@@ -520,11 +523,20 @@ input.inputUserNumber {
 
     /*-----------form-----------*/
 
+    .box2 {
+        padding: 50px 10px 50px 10px;
+    }
+
     .inputUser,
     .file,
     .inputUserNumber {
         width: 100%;
     }
+
+    a.maps, p.email {
+        font-size: 1.2rem;
+    }
+
 
     .box3 h1 {
         display: flex;
@@ -536,12 +548,17 @@ input.inputUserNumber {
         display: block;
     }
 
+    /* ------------------------ */
+
+    .gap img {
+        width: 70vw;
+    }
+
 }
 
 @media (max-width:425px) {
     .content h1 {
         font-size: 6vh;
-        padding: 0;
     }
 
     .content_text_div {
@@ -549,15 +566,14 @@ input.inputUserNumber {
     }
 
     .contentInfoInicio {
-        font-size: 3vh;
-    }
-
-    .contentInfoInicio {
-        font-size: 2vh;
-        padding: 0 2vh 0 2vh;
+        padding: 0 20px 0 20px;
     }
 
     /*-----------form-----------*/
+    .contentForm {
+        align-items: center;
+    }
+
     .contentForm h1 {
         font-size: 3vh;
     }
@@ -572,6 +588,10 @@ input.inputUserNumber {
         flex-direction: column;
     }
 
+    .div_block {
+        flex-wrap: wrap;
+    }
+
     /*-----------box4-----------*/
     .box4 h1 {
         font-size: 5vh;
@@ -582,7 +602,7 @@ input.inputUserNumber {
         width: 90%;
     }
 
-    .gap{
+    .gap {
         display: flex;
         justify-content: center;
     }

@@ -134,15 +134,25 @@ iframe {
     gap: 20px;
 }
 
+.boxSellMyCar2 div a {
+    text-decoration: none;
+}
+
+.boxSellMyCar2 div a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
 .boxSellMyCar2 div img {
     width: 30px;
 }
 
-.IconSocial{
+.IconSocial {
     color: #3c3c3c;
     font-size: 1.8rem;
 }
-.IconSocial:hover{
+
+.IconSocial:hover {
     scale: 1.2;
     transition-duration: 300ms;
     opacity: 0.8;
