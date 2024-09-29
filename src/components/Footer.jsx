@@ -1,5 +1,3 @@
-import styles from './assets/css/Footer.css'
-
 import logo from './assets/img/cabecalho-rodape/footer/logo-preto.png'
 import walmart from './assets/img/cabecalho-rodape/footer/patrocinio/patrocinio-walmart.png'
 import microsoft from './assets/img/cabecalho-rodape/footer/patrocinio/patrocinio-microsoft.png'

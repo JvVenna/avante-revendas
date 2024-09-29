@@ -38,7 +38,9 @@ footer {
   height: fit-content;
 }
 
-.optionsFoot_div, .optionsFoot_div ul, a {
+.optionsFoot_div,
+.optionsFoot_div ul,
+a {
   color: #213547;
 }
 
@@ -121,7 +123,13 @@ footer {
 }
 
 @media (max-width:1100px) {
-  footer{
+  .parceirosFooter {
+    display: none;
+  }
+}
+
+@media (max-width:1000px) {
+  .linkCopyright {
     display: none;
   }
 }
@@ -129,7 +137,34 @@ footer {
 @media (max-width:900px) {
 
   /*-----------cabecalho-----------*/
-  .optionsNav_ul{
-    display:none;
+  .optionsNav_ul {
+    display: none;
+  }
+
+  .box1Footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width:600px) {
+  .optionsFoot_div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width:425px) {
+  .copyright {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .border {
+    display: none;
+  }
+  footer{
+  gap: 30px;
   }
 }
