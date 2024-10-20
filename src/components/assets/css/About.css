@@ -272,7 +272,8 @@ a[href*="callto"] {
     }
     
     .imgBackgroundEnd_about {
-        display: none;
+        visibility: hidden;
+        height: 35em;
     }
 
     .box3_about h1,
