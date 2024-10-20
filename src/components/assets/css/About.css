@@ -1,3 +1,7 @@
+.firstBox h1, .box2_about h1 {
+    color: var(--default-font-color);
+}
+
 .principalSobre {
     overflow-x: hidden;
 }

@@ -1,3 +1,7 @@
+.boxSellMyCar h1,.boxSellMyCar2 h2, .boxSellMyCar2 h4{
+    color: var(--default-font-color);
+}
+
 .contentSellMyCar {
     background-color: white;
     display: flex;

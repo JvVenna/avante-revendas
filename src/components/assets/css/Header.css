@@ -36,7 +36,7 @@ header nav ul {
   display: flex;
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 5rem;
   z-index: 5;
 
 }
@@ -50,12 +50,13 @@ header nav ul li a {
   color: rgb(241, 239, 239);
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
-  padding: 2.0rem;
   transition: all 250ms linear 0s;
 }
 
 header nav ul li a:hover {
   font-size: 1.3rem;
+  color: #ededed;
+  text-decoration: none;
 }
 
 header nav ul li a {

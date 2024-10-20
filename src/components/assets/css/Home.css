@@ -1,3 +1,5 @@
+
+
 div.content {
     min-height: 93vh;
     background-color: #5FDC64;
@@ -87,6 +89,7 @@ div.content {
 .contentInfoInicio div h3 {
     font-weight: 500;
     color: #006400;
+    font-size: 1rem;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -203,6 +206,10 @@ input.inputUserNumber {
     font-size: 17px;
 }
 
+/*colorindo textos com cor padrão react*/
+.contentContact a p, .box3 h1, div h2, div p, .box4 h1 {
+    color: var(--default-font-color);
+}
 
 .contentContact h1,
 .contentForm h1 {

@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+    --default-font-color:  #213547;
 }
 
 * {
@@ -19,10 +22,6 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-}
-
-p {
-  color: black;
 }
 
 button {
@@ -67,9 +66,8 @@ button:focus-visible {
     background-color: #ffffff;
   }
 
-  a {
-    color: #213547;
-    display: flex;
+  a, a:hover {
+    color: #ededed;
   }
 
   button {
@@ -77,6 +75,24 @@ button:focus-visible {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #213547;
+h1, h2, h3, h4, h5, h6,p {
+  color: #ffffff;
+}
+
+
+.close{
+  color: gray;
+  text-shadow: none;
+}
+.close:hover{
+  color: rgb(255, 255, 255);
+  
+}
+
+.modal-header{
+border-bottom: 1px solid rgb(86, 86, 86);
+}
+
+.modal-content{
+  background-color:#494444;
 }
